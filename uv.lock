@@ -1,0 +1,22 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "mixbox"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pymixbox" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pymixbox", specifier = ">=2.0.0" }]
+
+[[package]]
+name = "pymixbox"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/84/7c9d23ea219dd9b88ab89219b1da33325ffe6cf854a69b5b49f83039ef45/pymixbox-2.0.0.tar.gz", hash = "sha256:7f1fc8e950778efedfc20bbeeaf240576baca06726b3ce83a97ce507f226aee4", size = 125012 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dd/45/64a4d16175dda7cc61742ea2324df277c0f7875010833a3f08a450c83c3e/pymixbox-2.0.0-py2.py3-none-any.whl", hash = "sha256:ac645ee27989ee96622579250ccc057ede2cc57847c56c73082eae2e47341aa4", size = 123258 },
+]
